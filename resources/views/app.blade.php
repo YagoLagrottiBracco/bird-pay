@@ -14,7 +14,6 @@
         <!-- Scripts -->
         @routes
         @vite('resources/js/app.js')
-        <script src="{{ asset(mix('js/app.js')) }}" defer></script>
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
