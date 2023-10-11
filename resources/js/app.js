@@ -14,10 +14,7 @@ const pinia = createPinia()
 
 createInertiaApp({
   title: (title) => `${title} - ${appName}`,
-  resolve: (name) => {
-    const page = resolvePageComponent(`./Pages/${name}.vue`, glob('./Pages/**/*.vue'))
-    return page
-  },
+  resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, glob('./Pages/**/*.vue')),
   setup({ el, App, props, plugin }) {
     return createApp({ render: () => h(App, props) })
       .use(plugin)
