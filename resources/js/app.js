@@ -7,13 +7,12 @@ import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m'
 
-const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel'
-const { glob } = import.meta
+const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Bird Pay'
 const pinia = createPinia()
 
 createInertiaApp({
   title: (title) => `${title} - ${appName}`,
-  resolve: (name) => require(`./Pages/${name}.vue`),
+  resolve: (name) => import(`./Pages/${name}.vue`),
   setup({ el, App, props, plugin }) {
     return createApp({ render: () => h(App, props) })
       .use(plugin)
