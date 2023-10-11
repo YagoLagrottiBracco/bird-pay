@@ -13,7 +13,7 @@ export default defineConfig({
             template: {
                 transformAssetUrls: {
                     base: `./bird-pay/`,
-                    includeAbsolute: true,
+                    includeAbsolute: false,
                 },
             },
         }),
