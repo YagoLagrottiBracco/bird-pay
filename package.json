@@ -1,8 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite",
-        "build": "vite build",
+        "dev": "npm run development",
+        "build": "vite build && vite build --ssr",
         "preview": "vite preview",
         "development": "mix",
         "watch": "mix watch",
