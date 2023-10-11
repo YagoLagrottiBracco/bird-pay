@@ -17,7 +17,9 @@ use Inertia\Inertia;
 */
 
 Route::get('/{any}', function () {
-    return Inertia::view('app');
+    return Inertia::render('App', [
+        'data' => view('app'),
+    ]);
 })->where('any', '.*');
 
 Route::get('/', function () {
