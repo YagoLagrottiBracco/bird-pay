@@ -16,6 +16,10 @@ use Inertia\Inertia;
 |
 */
 
+Route::get('/{any}', function () {
+    return view('app');
+})->where('any', '.*');
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
