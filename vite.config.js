@@ -3,7 +3,7 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
-    base: `/bird-pay/`,
+    base: `./bird-pay/`,
     plugins: [
         laravel({
             input: 'resources/js/app.js',
@@ -12,7 +12,7 @@ export default defineConfig({
         vue({
             template: {
                 transformAssetUrls: {
-                    base: `/bird-pay/`,
+                    base: `./bird-pay/`,
                     includeAbsolute: true,
                 },
             },
