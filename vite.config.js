@@ -11,7 +11,7 @@ export default defineConfig({
         vue({
             template: {
                 transformAssetUrls: {
-                    base: null,
+                    base: '/bird-pay',
                     includeAbsolute: false,
                 },
             },
