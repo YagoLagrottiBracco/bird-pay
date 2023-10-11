@@ -3,7 +3,7 @@ import '../css/main.css'
 import { createPinia } from 'pinia'
 import { useDarkModeStore } from './stores/darkMode.js'
 import { darkModeKey } from './config.js'
-import { createApp, h } from 'vue'
+import { createApp } from 'vue/dist/vue.esm-bundler';
 import { createInertiaApp } from '@inertiajs/vue3'
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m'
 
