@@ -1,5 +1,1 @@
-<template>
-    <div>
-      <div v-html="$page"></div>
-    </div>
-  </template>
+<template><div v-html="$page.props"></div></template>
