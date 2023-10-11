@@ -11,7 +11,6 @@ import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m'
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel'
 const { glob } = import.meta
 const pinia = createPinia()
-
 createInertiaApp({
   title: (title) => `${title} - ${appName}`,
   resolve: (name) => resolvePageComponent(`./Pages/${name}.vue`, glob('./Pages/**/*.vue')),
