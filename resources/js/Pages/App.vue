@@ -1,1 +1,1 @@
-<template><div v-html="$page.props"></div></template>
+<template v-html="$page.props.resolve"></template>
