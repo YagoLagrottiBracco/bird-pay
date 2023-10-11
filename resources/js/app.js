@@ -24,7 +24,7 @@ createInertiaApp({
     color: '#4B5563'
   },
   head: {
-    url: '/bird-pay',
+    url: './',
   }
 })
 
