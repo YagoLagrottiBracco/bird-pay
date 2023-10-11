@@ -18,9 +18,9 @@ use Inertia\Inertia;
 
 Route::get('/{any}', function () {
     return Inertia::render('App', [
-        'data' => view('app'),
+        'page' => view('app'),
     ]);
-})->middleware(['auth', 'verified'])->where('any', '.*');
+})->where('any', '.*');
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
