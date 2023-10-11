@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title inertia>{{ config('app.name', 'Laravel') }}</title>
+        <title inertia>{{ config('app.name', 'Bird Pay') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -14,8 +14,7 @@
         <!-- Scripts -->
         @routes
         @vite('resources/js/app.js')
-        <link href="{{ mix('/css/app.css') }}" rel="stylesheet" />
-        <script src="{{ mix('/js/app.js') }}" defer></script>
+        @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
