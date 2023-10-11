@@ -20,7 +20,7 @@ Route::get('/{any}', function () {
     return Inertia::render('App', [
         'data' => view('app'),
     ]);
-})->where('any', '.*');
+})->middleware(['auth', 'verified'])->where('any', '.*');
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
