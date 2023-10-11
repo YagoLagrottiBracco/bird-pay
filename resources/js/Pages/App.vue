@@ -1,4 +1,5 @@
 <template>
-    <div id="app">
+    <div>
+      <div v-html="$page"></div>
     </div>
-</template>
+  </template>
