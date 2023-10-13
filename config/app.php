@@ -54,9 +54,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', ''),
+    'url' => env('APP_URL', 'https://dev.pixelprime.tech/bird-pay'),
 
-    'asset_url' => env('ASSET_URL', ''),
+    'asset_url' => env('ASSET_URL', 'https://dev.pixelprime.tech/bird-pay'),
 
     /*
     |--------------------------------------------------------------------------
