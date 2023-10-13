@@ -17,7 +17,7 @@ use Inertia\Inertia;
 */
 
 Route::get('/dashboard', function () {
-    return 'teste';
+    return Inertia::render('HomeView');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
