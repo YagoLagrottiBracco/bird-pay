@@ -10,7 +10,7 @@ module.exports = {
     './resources/js/**/*.vue',
     './resources/js/**/*.js'
   ],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: "class",
   theme: {
     asideScrollbars: {
       light: "light",
